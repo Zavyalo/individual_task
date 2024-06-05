@@ -9,15 +9,89 @@
 html {
     font-family: 'lexend', Arial, sans-serif;
 }
+.container {
+    max-width: 1146px;
+    margin: 0 auto;
+    position: relative;
+}
 h2 {
     font-weight: bold;
     font-size: 43px;
 }
 
+section {
+    background-color: rgb(206, 236, 243); 
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 660px;
+}
+.header {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr; 
+    min-height: 130px;
+}
+.p1 {
+    font-weight: bolder;
+}
+.search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 39px;
+    color: rgb(4, 5, 34);
+    background-color: white;
+    padding-top: 14px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 11px;
+}
+.search p {
+    margin-left: 10px;
+    margin-right: 141px;
+}
+
 .first__block {
-    background-color: rgb(206, 236, 243);
-    height: 720px;
     margin-bottom: 70px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr; 
+}
+.text__main h4 {
+    font-size: 21px;
+    font-weight: bold;
+    color: rgb(23, 31, 229);
+    margin-bottom: 10px;
+}
+.text__main h1 {
+    font-size: 58px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    border-radius: 39px;
+    color: white;
+    background-color: rgb(255, 132, 63);
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 30px;
+    padding-right: 14px;
+    margin-top: 40px;
+}
+button p {
+    margin-right: 25px;
+    font-size: 18px;
 }
 
 .pictures{
@@ -92,15 +166,21 @@ h2 {
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 260px 122px;
-    gap: 774px; 
+    grid-template-columns: 1fr 1fr; 
     margin-top: 120px;
     margin-bottom: 70px;
 }
-.text__new p {
+.text__new a {
     font-size: 22px;
     font-weight: bold;
     color: rgb(229 97 23);
+    text-align: right;
+}
+.text__new a :hover {
+    color: rgb(255, 161, 102); 
+}
+.text__new a :focus {
+    color: rgb(0, 0, 0); 
 }
 .text__new h2 {
     font-weight: bold;
@@ -144,7 +224,7 @@ h2 {
     padding-left: 42px;
     padding-right: 42px;
 }
-.speciality h4 {
+.speciality h3 {
     margin-top: 20px;
     font-size: 22px;
 }
@@ -165,40 +245,50 @@ h2 {
     width: 50px;
     border-radius: 10px;
 }
-
+.brands__wrapper {
+        background-color: rgb(248, 252, 253);
+}
 .brands{
+    width: 100%;
     padding-top: 74px;
-    padding-bottom: 74px;
-    padding-left: 227px;
-    padding-right: 227px;
+    padding-bottom: 74px; 
     margin-top: 74px;
     margin-bottom: 120px;
     display: grid;
-    justify-content: center;
-    grid-template-columns: 170px 200px 197px 170px;
-    gap: 137px;     
-    background-color: rgb(248, 252, 253);
+    justify-content: space-between;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+       
+
 }
 .text__brand {
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 323px 79px;
-    gap: 744px; 
+    grid-template-columns: 1fr 1fr;    
     margin-top: 120px;
     margin-bottom: 70px;
 }
-.text__brand p {
-    font-size: 15px;
+.text__brand a {
+    font-size: 18px;
     color: rgb(229 97 23);
+    text-align: right;
+}
+.text__brand a :hover {
+    color: rgb(255, 161, 102); 
+}
+.text__brand a :focus {
+    color: rgb(0, 0, 0); 
 }
 .text__card {
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 395px 386px;
-    gap: 362px; 
+    grid-template-columns: 1fr 1fr;  
     margin-bottom: 70px;
+}
+.text__card p {
+    text-align: right;
 }
 
 .cards {
@@ -218,14 +308,22 @@ h2 {
     background-color: rgb(248, 252, 253);
     padding: 25px; 
 }
-.card1 h5{
-    font-size: 15px;
+.card1 h4{
+    font-size: 16px;
     color: rgb(229 97 23);
     margin-top: 20px;
 }
-.card1 h4{
+.card1 h3{
     font-size: 22px;
     margin-bottom: 10px;
+}
+.text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.text h5 {
+    font-size: 16px;
 }
 
 .point {
